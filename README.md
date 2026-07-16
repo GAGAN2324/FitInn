@@ -63,25 +63,8 @@ spring.datasource.username=root
 spring.datasource.password=your_password
 ```
 
-### Run the backend
-```bash
-mvn spring-boot:run
-```
-Runs on `http://localhost:8080`.
 
-### Run the frontend
-Open `MicroFrontend/login.html` via a local static server (e.g. IntelliJ's built-in web server, or `npx serve`).
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | /api/auth/login | User login |
-| POST | /api/auth/register | User registration |
-| GET | /api/users | Get all users |
-| GET | /api/users/{id} | Get user by ID |
-| POST | /api/workouts | Add workout |
-| GET | /api/workouts | Get workouts |
-| GET | /api/dashboard | Dashboard statistics |
-| GET | /api/bmi | Calculate BMI |
 
 ## Architecture
 
@@ -103,6 +86,26 @@ MySQL Database
 
 
 
+
+### Run the backend
+```bash
+mvn spring-boot:run
+```
+Runs on `http://localhost:8080`.
+
+### Run the frontend
+Open `MicroFrontend/login.html` via a local static server (e.g. IntelliJ's built-in web server, or `npx serve`).
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | /api/auth/login | User login |
+| POST | /api/auth/register | User registration |
+| GET | /api/users | Get all users |
+| GET | /api/users/{id} | Get user by ID |
+| POST | /api/workouts | Add workout |
+| GET | /api/workouts | Get workouts |
+| GET | /api/dashboard | Dashboard statistics |
+| GET | /api/bmi | Calculate BMI |
 
 
 
