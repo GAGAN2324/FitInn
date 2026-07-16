@@ -1,17 +1,40 @@
 # FitPlus (MicroFit)
 
-A fitness tracking web application for managing workouts and monitoring personal fitness progress, built with a Spring Boot backend and a lightweight HTML/CSS/JS frontend.
+A fitness tracking web application built using Java, Spring Boot, Spring Security, Spring Data JPA, and MySQL. The application provides REST APIs for user management, workout tracking, BMI calculation, weight monitoring, and dashboard analytics with a lightweight HTML/CSS/JavaScript frontend.
 
 ## Features
 
-- **User Authentication** — JWT-based login flow.
-- **Workout Tracking** — log and view workouts tied to a user profile.
-- **Dashboard** — view fitness stats and progress at a glance.
-
+- JWT-based authentication with token generation and validation.
+- User management through REST APIs.
+- Workout tracking and workout history.
+- BMI calculation and weight monitoring.
+- Dashboard for fitness statistics and progress visualization.
+- RESTful APIs for frontend-backend communication.
+  
 ## Tech Stack
 
-**Backend:** Java, Spring Boot, Spring Security, JWT, Spring Data JPA, MySQL
-**Frontend:** HTML, CSS, vanilla JavaScript
+### Backend
+- Java
+- Spring Boot
+- Spring Security
+- Spring Data JPA
+- JWT
+- Maven
+
+### Database
+- MySQL
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+
+  ## Backend Highlights
+
+- Developed 18 RESTful APIs for authentication, user management, workout tracking, BMI calculation, and dashboard analytics.
+- Implemented JWT token generation and validation using Spring Security.
+- Integrated MySQL using Spring Data JPA for efficient CRUD operations.
+- Designed the application using the Controller–Service–Repository architecture.
 
 ## Project Structure
 
@@ -49,21 +72,32 @@ Runs on `http://localhost:8080`.
 ### Run the frontend
 Open `MicroFrontend/login.html` via a local static server (e.g. IntelliJ's built-in web server, or `npx serve`).
 
-## API Endpoints
-
 | Method | Endpoint | Description |
-|---|---|---|
-| POST | `/api/auth/login` | Authenticate and receive a JWT |
-| POST | `/api/auth/register` | Register a new user |
-| GET/POST | `/api/users/**` | User CRUD operations |
-| GET/POST | `/api/workouts/**` | Workout CRUD operations |
+|--------|----------|-------------|
+| POST | /api/auth/login | User login |
+| POST | /api/auth/register | User registration |
+| GET | /api/users | Get all users |
+| GET | /api/users/{id} | Get user by ID |
+| POST | /api/workouts | Add workout |
+| GET | /api/workouts | Get workouts |
+| GET | /api/dashboard | Dashboard statistics |
+| GET | /api/bmi | Calculate BMI |
 
-## Roadmap / Known Limitations
+## Architecture
 
-- Wire `/register` to actually persist users to the database
-- Replace the hardcoded demo login check with real credential verification against the `User` table
-- Add password hashing (BCrypt) before storing user passwords
-
+Frontend (HTML/CSS/JavaScript)
+        │
+        ▼
+Spring Boot REST APIs
+        │
+        ▼
+Service Layer
+        │
+        ▼
+Spring Data JPA
+        │
+        ▼
+MySQL Database
 ##Screenshots
 <img width="1883" height="898" alt="image" src="https://github.com/user-attachments/assets/2ffd6ad1-fb36-49b9-a3af-907b5ee5c067" /> 
 -Landing Page
