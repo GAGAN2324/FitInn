@@ -1,4 +1,4 @@
-# FitPlus (MicroFit)
+# FitSync 
 
 A fitness tracking web application built using Java, Spring Boot, Spring Security, Spring Data JPA, and MySQL. The application provides REST APIs for user management, workout tracking, BMI calculation, weight monitoring, and dashboard analytics with a lightweight HTML/CSS/JavaScript frontend.
 
