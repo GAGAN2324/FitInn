@@ -96,6 +96,8 @@ Runs on `http://localhost:8080`.
 ### Run the frontend
 Open `MicroFrontend/login.html` via a local static server (e.g. IntelliJ's built-in web server, or `npx serve`).
 
+
+## API Endpoints
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST | /api/auth/login | User login |
