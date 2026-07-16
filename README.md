@@ -1,4 +1,4 @@
-# FitInn (MicroFit)
+# FitPlus (MicroFit)
 
 A fitness tracking web application for managing workouts and monitoring personal fitness progress, built with a Spring Boot backend and a lightweight HTML/CSS/JS frontend.
 
