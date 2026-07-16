@@ -112,7 +112,7 @@ Open `MicroFrontend/login.html` via a local static server (e.g. IntelliJ's built
 
 
 
-##Screenshots
+## Screenshots
 <img width="1883" height="898" alt="image" src="https://github.com/user-attachments/assets/2ffd6ad1-fb36-49b9-a3af-907b5ee5c067" /> 
 -Landing Page
 
